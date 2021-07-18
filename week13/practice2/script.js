@@ -1,23 +1,28 @@
+let num1,
+    num2;
+
+function inputData() {
+  alert('Вводите только числовые данные');
+  num1 = +prompt('Введите число');
+  num2 = +prompt('Введите число');
+}
+
 function sum() {
-  let a = prompt('Введите число');
-  let b = prompt('Введите число');
-  alert(Number(a)+Number(b));
+  inputData();
+  alert(num1 + num2);
 }
 
 function sub() {
-  let a = prompt('Введите число');
-  let b = prompt('Введите число');
-  alert(Number(a)-Number(b));
+  inputData();
+  alert(num1 - num2);
 }
 
 function multi() {
-  let a = prompt('Введите число');
-  let b = prompt('Введите число');
-  alert(Number(a)*Number(b));
+  inputData();
+  alert(num1 * num2);
 }
 
 function div() {
-  let a = prompt('Введите число');
-  let b = prompt('Введите число');
-  alert(Number(a)/Number(b));
+  inputData();
+  alert(num1 / num2);
 }
