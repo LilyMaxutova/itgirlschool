@@ -9,29 +9,20 @@ function check() {
 
   if (name.value == '') {
     document.getElementById('errorMessage').innerHTML += 'Введите ваше имя<br>';
-  }
-
-  if (surname.value == '') {
+  } else if (surname.value == '') {
     document.getElementById('errorMessage').innerHTML += 'Введите вашe фамилию<br>';
-  }
-
-  if (email.value == '') {
+  } else if (email.value == '') {
     document.getElementById('errorMessage').innerHTML += 'Введите ваш e-mail<br>';
-  }
-
-  if (password.value == '') {
+  } else if (password.value == '') {
     document.getElementById('errorMessage').innerHTML += 'Введите ваш пароль<br>';
-  }
-
-  if (confirmation.value == '') {
+  } else if (confirmation.value == '') {
     document.getElementById('errorMessage').innerHTML += 'Подтвердите ваш пароль<br>';
-  }
-
-  if (password.value !== confirmation.value) {
+  } else if (password.value !== confirmation.value) {
     document.getElementById('errorMessage').innerHTML += 'Пароли не совпадают<br>';
-  }
-
-  if (password.value.length <5) {
+  } else if (password.value.length <5) {
     document.getElementById('errorMessage').innerHTML += 'Ваш пароль слишком короткий<br>';
+  } else {
+    alert(`Добро пожаловать, ${name.value}`);
   }
 }
+
