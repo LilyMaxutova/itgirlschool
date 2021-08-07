@@ -39,15 +39,15 @@ function div() {
   let num1 = Number(document.getElementById('num7').value),
       num2 = Number(document.getElementById('num8').value);
       if (isNumValid(num1) && isNumValid(num2)) {
+        if (num2 == 0) {
+          alert('На 0 делить нельзя!');
+          return;
+         } 
         let result = num1 / num2;
         document.getElementById('result4').innerHTML = result;
       } else {
         alert ('Только числовые значения');
       }
-
-     if (num2 == 0) {
-      alert('На 0 делить нельзя!');
-     }
 }
 
   
